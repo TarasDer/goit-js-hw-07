@@ -31,6 +31,12 @@ galleryEl.addEventListener('click', event => {
 `);
 
   instance.show();
+
+  galleryEl.addEventListener('keydown', event => {
+    if (event.code === 'Escape') {
+      instance.close();
+    }
+  });
 });
 
 // console.log(galleryItems);
